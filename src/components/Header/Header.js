@@ -6,10 +6,10 @@
 //         <nav className='header'>
 //             <img src={logo} alt="" />
 //             <div>
-//                 <a href="Shop">Shop</a>
-//                 <a href="Orders">Orders</a>
-//                 <a href="inventory">Inventory</a>
-//                 <a href="about">About</a>
+//                 <a to="Shop">Shop</a>
+//                 <a to="Orders">Orders</a>
+//                 <a to="inventory">Inventory</a>
+//                 <a to="about">About</a>
 //             </div>
 //         </nav>
 //     );
@@ -17,6 +17,7 @@
 
 // export default Header;
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../images/Logo.svg";
 import "./Header.css";
 
@@ -26,10 +27,10 @@ const Header = () => {
       <img src={logo} alt="" />
       <div>
         
-        <a href="Shop">ShOoop</a>
-        <a href="Orders">Orders</a>
-        <a href="inventory">Inventory</a>
-        <a href="about">About</a>
+        <Link to="Shop">ShOoop</Link>
+        <Link to="Orders">Orders</Link>
+        <Link to="inventory">Inventory</Link>
+        <Link to="about">About</Link>
       </div>
     </nav>
   );
